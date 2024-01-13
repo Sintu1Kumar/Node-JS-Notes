@@ -1,0 +1,16 @@
+{
+  "name": "js-by-aman-sir",
+  "version": "1.0.0",
+  "description": "* Built-in Modules",
+  "main": "app.js",
+  "scripts": {
+    "sintu": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "lodash": "^4.17.21"
+  }
+}

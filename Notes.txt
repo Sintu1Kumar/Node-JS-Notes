@@ -1,4 +1,4 @@
-* Built-in Modules
+## Built-in Modules
 
 1. OS Module
 2. Path Module
@@ -6,3 +6,24 @@
 4. HTTP Module
 5. Process Module
 6. Buffer Module
+
+## npm
+
+npm - global command, come with node
+npm --version
+
+local dependency - use it only in this particular folder/project.
+npm i <packageName>
+
+global dependency - use it in any project
+npm install -g <packageName>
+
+## NPM Initialize
+package.json - manifest file (stores important info about project/package)
+1. manual approach (create package.json in the root, create properties etc)
+2. npm init (step by step, press enter to skip)
+3. npm init -y (everything default)
+
+## Nodemon - npm i nodemon - re-run your application every time you make changes.
+
+Uninstall dependency - npm uninstall <packageName>
