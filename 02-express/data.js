@@ -41,4 +41,4 @@ const products = [
     { id: 5, name: 'Rohit' },
   ];
 
-  module.exports = { products, people }
+  module.exports = { products, people }

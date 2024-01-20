@@ -69,7 +69,7 @@
   .social-icons {
     display: none;
   }
-  @media (max-width: 800px) {
+  @media (min-width: 800px) {
     .nav-center {
       max-width: 1170px;
       margin: 0 auto;

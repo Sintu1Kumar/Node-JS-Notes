@@ -4,7 +4,7 @@
   "description": "* Built-in Modules",
   "main": "app.js",
   "scripts": {
-    "sintu": "nodemon app.js"
+    "start": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
