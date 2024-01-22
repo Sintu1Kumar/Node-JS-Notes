@@ -1,22 +1,24 @@
 const express = require("express");
-const {products} = require('./data');
 const app = express();
 
-app.get('/', (req, res)=>{
-  res.send('<h2>Home Page</h2> <a href="/api/products">products<a/>');
-  // res.json([{user:"sintu"},{user:"vivek"}]);
+
+//* req => middleware => res
+const logger = ('/', (req, res, next)=>{
+  const method = req.method;
+  const url = req.url;
+  const time = new Date().getHours() +":"+ new Date().getMinutes() +":"+ new Date().getSeconds();
+
+  // res.send("Done");
+  console.log(method, url, time);
+  next();
 });
 
-app.get('/api/products', (req, res)=>{
-  res.json(products);
+app.get("/", logger, (req, res)=>{
+  res.send("Welcome to Home Page");
 });
 
-app.get('/api/products/:productID', (req, res)=>{
-  console.log(req.params);
-  const { productID } = req.params;
-  const singleProduct = products.find((product) => product.id == req.params.productID);
-
-  res.json(singleProduct);
+app.get("/about", logger, (req, res)=>{
+  res.send("Our About Page");
 });
 
 //* app.listen
