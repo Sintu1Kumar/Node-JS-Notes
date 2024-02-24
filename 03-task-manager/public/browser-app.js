@@ -8,6 +8,7 @@ const formAlertDOM = document.querySelector(".form-alert");
 const showTasks = async () => {
   loadingDOM.style.visibility = "visible";
   try {
+
     const {
       data: { tasks },
     } = await axios.get("/api/v1/tasks");
